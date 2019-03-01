@@ -1,3 +1,14 @@
 .gradle
 .idea
 *.bin
+/target/
+/.gradle/
+/.idea/
+/build/
+/gradlew
+/build.gradle
+/dependency-reduced-pom.xml
+/out/
+/settings.gradle
+/gradle/
+/gradlew.bat
