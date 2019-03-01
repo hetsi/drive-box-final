@@ -20,7 +20,7 @@ import java.security.GeneralSecurityException;
 import java.util.Collections;
 import java.util.List;
 
-public class DriveBoxIntegrationtest {
+public class DriveBoxIntegrationTest {
 
     final String APPLICATION_NAME = "Google Drive API Java Quickstart";
     final JsonFactory JSON_FACTORY = JacksonFactory.getDefaultInstance();

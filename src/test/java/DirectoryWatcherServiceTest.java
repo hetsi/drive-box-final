@@ -54,15 +54,15 @@ public class DirectoryWatcherServiceTest {
         Assert.assertTrue(dws.uploadFile(new java.io.File(".")));
     }
 
-    @Test(expected = InterruptedException.class)
+/*    @Test(expected = InterruptedException.class)
     public void testStartWatching() throws IOException, InterruptedException {
 
         com.google.api.services.drive.Drive service = mock(com.google.api.services.drive.Drive.class);
         DirectoryWatcherService dws = new DirectoryWatcherService(service, ".");
-       /* PowerMockito.mockStatic(FileSystems.class);
+       *//* PowerMockito.mockStatic(FileSystems.class);
         FileSystem fs = mock(FileSystem.class);
         when(FileSystems.getDefault()).thenReturn(fs);
-        when(fs.newWatchService()).thenThrow(new IOException("Test"));*/
+        when(fs.newWatchService()).thenThrow(new IOException("Test"));*//*
         WatchService watch = mock(WatchService.class);
         Path p = mock(Path.class);
         when(p.register(watch,                 StandardWatchEventKinds.ENTRY_CREATE,
@@ -70,5 +70,5 @@ public class DirectoryWatcherServiceTest {
                 StandardWatchEventKinds.ENTRY_MODIFY)).thenReturn(mock(WatchKey.class));
         when(watch.take()).thenThrow(new InterruptedException("Test"));
         dws.startWatching(watch);
-    }
+    }*/
 }
